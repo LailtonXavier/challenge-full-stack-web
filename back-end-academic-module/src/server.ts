@@ -6,6 +6,7 @@ import swaggerSpec from './infra/config/swagger/swagger';
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;
+const URL_API = process.env.URL_API || 3000;
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
   explorer: true,
@@ -21,6 +22,6 @@ app.get('/health', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-  console.log('Documentação Swagger disponível em: http://localhost:3000/api-docs');
+  console.log(`Server running on ${URL_API}:${PORT}`);
+  console.log(`Documentação Swagger disponível em: ${URL_API}:${PORT}/api-docs`);
 });
