@@ -95,8 +95,8 @@ Siga estes passos para configurar e iniciar a aplicação no seu ambiente local.
 ### 1. Clonar o Repositório - Configurar primeiro o BackEnd e FrondEnd
 
 ```bash
-git clone [git@github.com:LailtonXavier/challenge-full-stack-web.git](git@github.com:LailtonXavier/challenge-full-stack-web.git)
-cd nome-do-diretorio-principal # Ex: cd back-end-academic-module
+git clone git@github.com:LailtonXavier/challenge-full-stack-web.git
+cd back-end-academic-module
 ```
 
 ### 2. Configurar Variáveis de Ambiente dentro da pasta back-end-academic-module
