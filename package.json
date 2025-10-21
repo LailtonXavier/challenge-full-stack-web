@@ -1,0 +1,29 @@
+{
+  "name": "challenge-grupo-a",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1"
+  },
+  "lint-staged": {
+    "front-end-academic-module/**/*.{js,jsx,ts,tsx}": [
+      "npm run lint --workspace=front-end-academic-module",
+      "npm run test:staged --workspace=front-end-academic-module"
+    ],
+    "back-end-academic-module/**/*.{js,ts}": [
+      "npm run lint --workspace=back-end-academic-module",
+      "npm run test:staged --workspace=back-end-academic-module"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "prepare": "husky",
+    "frontend:lint": "cd front-end-academic-module && npm run lint",
+    "backend:lint": "cd back-end-academic-module && npm run lint"
+  }
+}
