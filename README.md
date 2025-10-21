@@ -25,6 +25,7 @@
   - [🛠️ Scripts Úteis (`package.json`)](#️-scripts-úteis-packagejson)
   - [🔐 Segurança e Boas Práticas](#-segurança-e-boas-práticas)
   - [📄 COMMENTS.md](#-commentsmd)
+  - [COMMENTS \[git@github.com:LailtonXavier/challenge-full-stack-web.git\]](#comments-gitgithubcomlailtonxavierchallenge-full-stack-webgit)
   - [📜 License](#-license)
 
 ---
@@ -94,7 +95,7 @@ Siga estes passos para configurar e iniciar a aplicação no seu ambiente local.
 ### 1. Clonar o Repositório - Configurar primeiro o BackEnd e FrondEnd
 
 ```bash
-git clone [https://www.youtube.com/watch?v=351MZvGXpnY](https://www.youtube.com/watch?v=351MZvGXpnY)
+git clone [git@github.com:LailtonXavier/challenge-full-stack-web.git](git@github.com:LailtonXavier/challenge-full-stack-web.git)
 cd nome-do-diretorio-principal # Ex: cd back-end-academic-module
 ```
 
@@ -270,6 +271,8 @@ Ajuste conforme sua configuração real (por exemplo, caminhos para `main.ts` ou
 
 *Insira aqui o conteúdo do seu `COMMENTS.md` ou um link para o arquivo.*
 
+
+COMMENTS [[git@github.com:LailtonXavier/challenge-full-stack-web.git](https://github.com/LailtonXavier/challenge-full-stack-web/blob/master/COMMENTS.md)]
 ---
 
 ## 📜 License
