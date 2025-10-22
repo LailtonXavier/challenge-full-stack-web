@@ -45,6 +45,18 @@ services:
       timeout: 5s
       retries: 5
 
+  frontend:
+    build:
+      context: ../front-end-academic-module
+      dockerfile: Dockerfile
+    container_name: vue_front
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+    networks:
+      - academic-network
+
 volumes:
   pgdata:
 
