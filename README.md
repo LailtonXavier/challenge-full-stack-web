@@ -1,10 +1,10 @@
-# 📚 Módulo Acadêmico - Back-End e Front-End
+# 📚 Módulo Acadêmico - Back-End - Front-End e AWS
 
 ---
 
 ## 📌 Sumário
 
-- [📚 Módulo Acadêmico - Back-End e Front-End](#-módulo-acadêmico---back-end-e-front-end)
+- [📚 Módulo Acadêmico - Back-End - Front-End e AWS](#-módulo-acadêmico---back-end---front-end-e-aws)
   - [📌 Sumário](#-sumário)
   - [🧾 Sobre](#-sobre)
   - [🧰 Stack Tecnológica](#-stack-tecnológica)
@@ -48,6 +48,7 @@ Esta seção lista as principais tecnologias e ferramentas utilizadas em todo o 
 
 | Categoria | Tecnologia | Finalidade |
 | :--- | :--- | :--- |
+| **AWS** | EC2 & RDS | Criei uma instancia de uma VM na AWS e RDS com banco Postgres, esta tudo configurado. |
 | **Linguagem** | TypeScript | Linguagem de desenvolvimento para tipagem estática e segurança do código. |
 | **Runtime** | Node.js | Ambiente de execução para o servidor. |
 | **Arquitetura** | Clean Architecture (Arquitetura Limpa) | Padrão arquitetural para separação de interesses e alta testabilidade. |

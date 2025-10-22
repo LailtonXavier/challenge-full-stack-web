@@ -106,7 +106,7 @@ import { useRegisterStudentForm } from '@/hooks/useRegisterStudentForm';
 import { useRegisterStudentMutation } from '@/hooks/useRegisterStudentMutation';
 import { defineProps, defineEmits } from 'vue';
 
-const props = defineProps<{ isVisible: boolean }>();
+defineProps<{ isVisible: boolean }>();
 const emit = defineEmits(['close', 'registered']);
 
 const { handleSubmit, reset, defineField, errors } = useRegisterStudentForm();
