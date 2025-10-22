@@ -6,6 +6,13 @@ dotenv.config();
 const PORT = process.env.PORT || 3000;
 const URL_API = process.env.URL_API || 'http://localhost';
 
+const getServerUrl = () => {
+  if (process.env.NODE_ENV === 'production') {
+    return `http://52.15.101.118:${PORT}`;
+  }
+  return `${URL_API}:${PORT}`;
+};
+
 const swaggerDefinition = {
   openapi: '3.0.0',
   info: {
@@ -15,8 +22,7 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      // url: `${URL_API}:${PORT}`,
-      url: 'http://localhost:3000',
+      url: getServerUrl(),
       description: 'Servidor de Desenvolvimento',
     },
   ],
