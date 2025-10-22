@@ -8,7 +8,26 @@ import { studentRoutes } from '@/core/student/infra/http/routes/student.routes';
 
 const app = express.default();
 
-app.use(cors());
+const allowedOrigins = [
+  'https://front-end-academic-module.vercel.app',
+  'http://localhost:3000',
+  'http://localhost:8080'
+];
+
+const corsOptions: cors.CorsOptions = {
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, 
+  optionsSuccessStatus: 200 
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use('/api', home);
