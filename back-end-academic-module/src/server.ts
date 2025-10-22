@@ -6,7 +6,7 @@ import swaggerSpec from './infra/config/swagger/swagger';
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;
-const URL_API = process.env.URL_API || 3000;
+const URL_API = process.env.URL_API || 'http://localhost';
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
   explorer: true,

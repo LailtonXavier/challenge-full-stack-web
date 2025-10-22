@@ -18,7 +18,7 @@ const swaggerDefinition = {
   info: {
     title: 'Módulo Acadêmico API',
     version: '1.0.0',
-    description: 'Documentação dos endpoints do sistema de gerenciamento acadêmico',
+    description: process.env.NODE_ENV === 'production' ? 'Servidor de Produção' : 'Servidor de Desenvolvimento',
   },
   servers: [
     {

@@ -9,9 +9,10 @@ import { studentRoutes } from '@/core/student/infra/http/routes/student.routes';
 const app = express.default();
 
 const allowedOrigins = [
-  'https://front-end-academic-module.vercel.app',
   'http://localhost:3000',
-  'http://localhost:8080'
+  'http://localhost:8080',
+  'http://52.15.101.118:3000',
+  'http://52.15.101.118'   
 ];
 
 const corsOptions: cors.CorsOptions = {
