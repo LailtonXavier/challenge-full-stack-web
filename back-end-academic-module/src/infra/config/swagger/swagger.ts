@@ -15,7 +15,8 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: `${URL_API}:${PORT}`,
+      // url: `${URL_API}:${PORT}`,
+      url: 'http://localhost',
       description: 'Servidor de Desenvolvimento',
     },
   ],
