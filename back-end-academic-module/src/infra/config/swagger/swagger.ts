@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;
-const URL_API = process.env.URL_API || 3000;
+const URL_API = process.env.URL_API || 'http://localhost';
 
 const swaggerDefinition = {
   openapi: '3.0.0',
@@ -15,7 +15,7 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: 'http://localhost:3000',
+      url: `${URL_API}:${PORT}`,
       description: 'Servidor de Desenvolvimento',
     },
   ],
