@@ -7,6 +7,7 @@
 - [📚 Módulo Acadêmico - Back-End - Front-End e AWS](#-módulo-acadêmico---back-end---front-end-e-aws)
   - [📌 Sumário](#-sumário)
   - [🧾 Sobre](#-sobre)
+  - [Demo do projeto](#demo-do-projeto)
   - [🧰 Stack Tecnológica](#-stack-tecnológica)
     - [Back-End](#back-end)
     - [Front-End](#front-end)
@@ -39,6 +40,11 @@ A API é construída em Node.js com TypeScript, utiliza PostgreSQL como banco de
 O Front-End foi desenvolvido usando Vue + Vite + Vuetify, focado em uma experiência de usuário eficiente.
 
 ---
+
+## Demo do projeto
+API esta na AWS URL:
+ [[http://52.15.101.118:3000](http://52.15.101.118:3000)]
+
 
 ## 🧰 Stack Tecnológica
 
